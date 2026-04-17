@@ -1,0 +1,139 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import ContactPanel from "../components/ContactPanel.astro";
+import ProjectCard from "../components/ProjectCard.astro";
+import SectionHeading from "../components/SectionHeading.astro";
+import StackPill from "../components/StackPill.astro";
+import TimelineItem from "../components/TimelineItem.astro";
+import { about, contact, experience, hero, projects, skills } from "../data/portfolio";
+---
+
+<BaseLayout>
+  <main class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(125,211,252,0.16),_transparent_30%),radial-gradient(circle_at_80%_20%,_rgba(139,240,207,0.12),_transparent_25%),linear-gradient(180deg,_#05070b_0%,_#070b11_40%,_#05070b_100%)]"></div>
+    <div class="absolute inset-0 -z-10 bg-grid bg-[length:52px_52px] opacity-[0.08]"></div>
+    <div class="absolute left-[10%] top-24 -z-10 h-60 w-60 rounded-full bg-flare/10 blur-3xl animate-float"></div>
+    <div class="absolute right-[8%] top-[28rem] -z-10 h-72 w-72 rounded-full bg-signal/10 blur-3xl animate-float"></div>
+
+    <header class="mx-auto flex w-full max-w-proseplus items-center justify-between px-6 py-6 sm:px-8 lg:px-10">
+      <a href="#" class="font-mono text-sm uppercase tracking-[0.35em] text-white">ZEN</a>
+      <nav class="hidden gap-6 text-sm text-slate-300 md:flex">
+        <a href="#about" class="transition hover:text-white">About</a>
+        <a href="#projects" class="transition hover:text-white">Projects</a>
+        <a href="#stack" class="transition hover:text-white">Stack</a>
+        <a href="#experience" class="transition hover:text-white">Experience</a>
+        <a href="#contact" class="transition hover:text-white">Contact</a>
+      </nav>
+    </header>
+
+    <section class="mx-auto grid min-h-[calc(100vh-5rem)] max-w-proseplus gap-12 px-6 pb-24 pt-10 sm:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:px-10 lg:pb-32 lg:pt-16">
+      <div class="flex flex-col justify-center">
+        <p class="font-mono text-xs uppercase tracking-[0.3em] text-signal">{hero.eyebrow}</p>
+        <h1 class="mt-6 max-w-4xl text-5xl font-extrabold tracking-[-0.04em] text-white sm:text-6xl lg:text-7xl">
+          {hero.title}
+        </h1>
+        <p class="mt-8 max-w-2xl text-lg leading-8 text-slate-300 sm:text-xl">{hero.summary}</p>
+        <div class="mt-10 flex flex-wrap gap-4">
+          <a
+            href={hero.primaryCta.href}
+            class="rounded-full border border-signal/40 bg-signal/10 px-6 py-3 text-sm font-semibold text-white transition hover:border-signal hover:bg-signal/15"
+          >
+            {hero.primaryCta.label}
+          </a>
+          <a
+            href={hero.secondaryCta.href}
+            class="rounded-full border border-white/10 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-white/25 hover:text-white"
+          >
+            {hero.secondaryCta.label}
+          </a>
+        </div>
+      </div>
+
+      <aside class="relative">
+        <div class="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 shadow-glow backdrop-blur">
+          <div class="rounded-[1.4rem] border border-white/10 bg-panel p-6">
+            <div class="flex items-center justify-between">
+              <p class="font-mono text-xs uppercase tracking-[0.25em] text-slate-500">System snapshot</p>
+              <span class="h-2.5 w-2.5 rounded-full bg-signal animate-pulseLine"></span>
+            </div>
+            <div class="mt-8 space-y-6">
+              {hero.metrics.map((metric) => (
+                <div class="border-b border-white/10 pb-5 last:border-b-0 last:pb-0">
+                  <p class="font-mono text-xs uppercase tracking-[0.24em] text-slate-500">{metric.label}</p>
+                  <p class="mt-2 text-2xl font-semibold text-white">{metric.value}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div class="mt-6 rounded-[1.4rem] border border-white/10 bg-white/[0.02] p-6">
+            <p class="font-mono text-xs uppercase tracking-[0.24em] text-slate-500">Current direction</p>
+            <p class="mt-4 text-sm leading-7 text-slate-300">
+              Stripping vendor dependency where it matters, keeping the stack legible, and publishing a portfolio that can be built once and served from a small box at home.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="mx-auto max-w-proseplus px-6 py-16 sm:px-8 lg:px-10">
+      <SectionHeading
+        eyebrow="About"
+        title="Android depth, infrastructure curiosity, and a preference for software that stays understandable."
+      />
+      <div class="mt-10 grid gap-8 lg:grid-cols-[1fr_0.8fr]">
+        <div class="space-y-6 text-base leading-8 text-slate-300">
+          {about.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        <div class="rounded-[1.8rem] border border-white/10 bg-white/[0.03] p-8">
+          <p class="font-mono text-xs uppercase tracking-[0.25em] text-ember">Operating principles</p>
+          <ul class="mt-6 space-y-4 text-sm leading-7 text-slate-300">
+            <li>Build with enough rigor that maintenance feels light, not heroic.</li>
+            <li>Prefer static outputs, portable services, and boring deploy paths.</li>
+            <li>Design for attention economy fatigue: faster, quieter, cleaner interfaces.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="mx-auto max-w-proseplus px-6 py-16 sm:px-8 lg:px-10">
+      <SectionHeading
+        eyebrow="Selected Projects"
+        title="Work that sits at the intersection of Android craft, performance, and ownership."
+        intro="These are first-draft placeholders, but they’re written to feel like the kinds of systems Zen would actually ship."
+      />
+      <div class="mt-10 grid gap-6 lg:grid-cols-3">
+        {projects.map((project) => <ProjectCard {...project} />)}
+      </div>
+    </section>
+
+    <section id="stack" class="mx-auto max-w-proseplus px-6 py-16 sm:px-8 lg:px-10">
+      <SectionHeading
+        eyebrow="Skills / Stack"
+        title="Strong preferences, lightly held, with a bias toward tools that earn their place."
+      />
+      <div class="mt-10 flex flex-wrap gap-3">
+        {skills.map((skill) => <StackPill label={skill} />)}
+      </div>
+    </section>
+
+    <section id="experience" class="mx-auto max-w-proseplus px-6 py-16 sm:px-8 lg:px-10">
+      <SectionHeading
+        eyebrow="Experience"
+        title="A career shaped by mobile product work, then sharpened by systems thinking."
+      />
+      <div class="mt-10 space-y-5">
+        {experience.map((item) => <TimelineItem {...item} />)}
+      </div>
+    </section>
+
+    <section id="contact" class="mx-auto max-w-proseplus px-6 py-16 pb-24 sm:px-8 lg:px-10 lg:pb-32">
+      <SectionHeading
+        eyebrow="Contact"
+        title="Open to focused collaboration, careful rebuilds, and privacy-minded product work."
+      />
+      <div class="mt-10">
+        <ContactPanel {...contact} />
+      </div>
+    </section>
+  </main>
+</BaseLayout>

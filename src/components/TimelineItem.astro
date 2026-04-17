@@ -1,0 +1,19 @@
+---
+interface Props {
+  period: string;
+  role: string;
+  company: string;
+  summary: string;
+}
+
+const { period, role, company, summary } = Astro.props as Props;
+---
+
+<div class="grid gap-4 rounded-[1.4rem] border border-white/10 bg-white/[0.025] p-6 md:grid-cols-[160px_1fr]">
+  <div class="font-mono text-xs uppercase tracking-[0.24em] text-slate-500">{period}</div>
+  <div>
+    <h3 class="text-xl font-semibold text-white">{role}</h3>
+    <p class="mt-1 text-sm text-signal">{company}</p>
+    <p class="mt-4 text-sm leading-7 text-slate-300">{summary}</p>
+  </div>
+</div>
