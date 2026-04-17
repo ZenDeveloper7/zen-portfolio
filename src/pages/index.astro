@@ -17,7 +17,7 @@ import { about, contact, experience, hero, projects, skills } from "../data/port
     <div class="absolute right-[7%] top-[26rem] -z-10 h-72 w-72 rounded-full bg-signal/10 blur-3xl animate-drift"></div>
 
     <header class="mx-auto flex w-full max-w-proseplus items-center justify-between px-6 py-6 sm:px-8 lg:px-10">
-      <a href="#" class="font-mono text-[0.8rem] uppercase tracking-[0.42em] text-white">ZEN</a>
+      <a href="#" class="font-mono text-[0.8rem] uppercase tracking-[0.42em] text-white">SUHAS</a>
       <nav class="hidden items-center gap-7 text-sm text-slate-300 md:flex">
         <a href="#about" class="relative transition duration-300 hover:text-white after:absolute after:-bottom-2 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-signal/75 after:transition after:duration-300 hover:after:scale-x-100">About</a>
         <a href="#projects" class="relative transition duration-300 hover:text-white after:absolute after:-bottom-2 after:left-0 after:h-px after:w-full after:origin-left after:scale-x-0 after:bg-signal/75 after:transition after:duration-300 hover:after:scale-x-100">Projects</a>
@@ -90,7 +90,7 @@ import { about, contact, experience, hero, projects, skills } from "../data/port
           <div class="mt-5 rounded-[1.5rem] border border-white/10 bg-white/[0.02] p-6">
             <p class="font-mono text-[0.68rem] uppercase tracking-[0.3em] text-slate-500">Current direction</p>
             <p class="mt-4 text-sm leading-8 text-slate-300">
-              Stripping vendor dependency where it matters, keeping the stack legible, and publishing a portfolio that can be built once and served from a small box at home.
+              Senior Android product work with strong Kotlin and Jetpack Compose depth, plus enough Flutter and backend experience to take features from UI to integration without handoffs becoming blockers.
             </p>
           </div>
         </div>
@@ -101,7 +101,7 @@ import { about, contact, experience, hero, projects, skills } from "../data/port
       <div class="reveal" data-reveal>
         <SectionHeading
           eyebrow="About"
-          title="Android depth, infrastructure curiosity, and a preference for software that stays understandable."
+          title="Android depth, product ownership, and a strong bias toward shipping work that stays maintainable."
         />
       </div>
       <div class="mt-12 grid gap-8 lg:grid-cols-[1fr_0.82fr]">
@@ -109,11 +109,11 @@ import { about, contact, experience, hero, projects, skills } from "../data/port
           {about.map((paragraph) => <p>{paragraph}</p>)}
         </div>
         <div class="reveal surface-panel rounded-[1.9rem] p-8 sm:p-9" data-reveal data-reveal-delay="2">
-          <p class="font-mono text-[0.7rem] uppercase tracking-[0.34em] text-ember">Operating principles</p>
+          <p class="font-mono text-[0.7rem] uppercase tracking-[0.34em] text-ember">Working style</p>
           <ul class="mt-7 space-y-4 text-sm leading-8 text-slate-300">
-            <li>Build with enough rigor that maintenance feels light, not heroic.</li>
-            <li>Prefer static outputs, portable services, and boring deploy paths.</li>
-            <li>Design for attention economy fatigue: faster, quieter, cleaner interfaces.</li>
+            <li>Prefer ownership-heavy roles with clear customer impact.</li>
+            <li>Modernize carefully: architecture, UI, and delivery quality should move together.</li>
+            <li>Ship complete features through collaboration across design, product, and engineering.</li>
           </ul>
         </div>
       </div>
@@ -123,11 +123,11 @@ import { about, contact, experience, hero, projects, skills } from "../data/port
       <div class="reveal" data-reveal>
         <SectionHeading
           eyebrow="Selected Projects"
-          title="Work that sits at the intersection of Android craft, performance, and ownership."
-          intro="These are first-draft placeholders, but they’re written to feel like the kinds of systems Zen would actually ship."
+          title="Public projects spanning mobile engineering, developer tooling, and backend-adjacent builds."
+          intro="Featured projects are taken from public GitHub work and summarized conservatively from repository names and descriptions."
         />
       </div>
-      <div class="mt-12 grid gap-6 lg:grid-cols-3">
+      <div class="mt-12 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
         {projects.map((project, index) => (
           <div class="reveal" data-reveal data-reveal-delay={String(index % 3)}>
             <ProjectCard {...project} />
@@ -140,7 +140,7 @@ import { about, contact, experience, hero, projects, skills } from "../data/port
       <div class="reveal" data-reveal>
         <SectionHeading
           eyebrow="Skills / Stack"
-          title="Strong preferences, lightly held, with a bias toward tools that earn their place."
+          title="Core strengths across Android, Flutter, architecture, and delivery."
         />
       </div>
       <div class="reveal mt-12 flex flex-wrap gap-3" data-reveal data-reveal-delay="1">
@@ -152,7 +152,7 @@ import { about, contact, experience, hero, projects, skills } from "../data/port
       <div class="reveal" data-reveal>
         <SectionHeading
           eyebrow="Experience"
-          title="A career shaped by mobile product work, then sharpened by systems thinking."
+          title="Mobile product experience across Android modernization, Flutter delivery, and white-labeled app platforms."
         />
       </div>
       <div class="mt-12 space-y-5">
@@ -168,7 +168,7 @@ import { about, contact, experience, hero, projects, skills } from "../data/port
       <div class="reveal" data-reveal>
         <SectionHeading
           eyebrow="Contact"
-          title="Open to focused collaboration, careful rebuilds, and privacy-minded product work."
+          title="Public profiles and current location."
         />
       </div>
       <div class="reveal mt-12" data-reveal data-reveal-delay="1">
