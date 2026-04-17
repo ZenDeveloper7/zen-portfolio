@@ -6,9 +6,9 @@ export const siteMeta = {
 
 export const hero = {
   eyebrow: "Suhas Ch • He/Him • Greater Hyderabad Area",
-  title: "Senior Android Developer building modern mobile products end to end.",
+  title: "Building Android products that feel modern, stable, and ready to scale.",
   summary:
-    "5+ years of experience across Android and Flutter, with strong depth in Kotlin, Jetpack Compose, and modern app architecture, plus hands-on Ktor and backend work when the product needs it.",
+    "Senior Android developer with 5+ years across Kotlin, Jetpack Compose, Flutter, and pragmatic backend integration, shipping customer-facing features with strong ownership from UI through delivery.",
   metrics: [
     { label: "Experience", value: "5+ years" },
     { label: "Primary Stack", value: "Kotlin + Compose" },
@@ -25,40 +25,31 @@ export const about = [
 
 export const projects = [
   {
-    title: "vaultcli",
-    label: "Linux CLI tool",
+    title: "droidlane",
+    label: "Android developer tool",
     summary:
-      "A Linux CLI for detecting, validating, mounting, and browsing gocryptfs backup vaults with a workflow designed for practical local backup operations.",
-    stack: ["Go", "Linux", "CLI", "gocryptfs"],
-    outcome: "Focused on durable command-line workflows and clear vault handling instead of opaque backup tooling.",
-    href: "https://github.com/ZenDeveloper7/vaultcli"
+      "A terminal-style Android project dashboard with a file editor, Gradle console, and git branch switcher aimed at streamlining day-to-day Android workflows.",
+    stack: ["Android", "Kotlin", "Developer Tools", "Git"],
+    outcome: "A strong example of developer-experience thinking applied to Android tooling.",
+    href: "https://github.com/ZenDeveloper7/droidlane"
   },
   {
     title: "PiStats + PiStats-Backend",
     label: "Monitoring app + backend",
     summary:
-      "A Raspberry Pi stats and monitoring project split across app and backend repos, covering device telemetry, monitoring, and supporting services.",
+      "A Raspberry Pi monitoring project split across app and backend repos, covering device telemetry, monitoring, and supporting services.",
     stack: ["Android", "Kotlin", "Backend", "Monitoring"],
-    outcome: "Shows a practical interest in observability and companion tooling beyond the mobile client.",
+    outcome: "Shows practical interest in observability and companion tooling beyond the mobile client.",
     href: "https://github.com/ZenDeveloper7/PiStats"
   },
   {
-    title: "PiVaultBrowser",
-    label: "Apple platform utility",
+    title: "vaultcli",
+    label: "Linux CLI tool",
     summary:
-      "An Apple platform browser for Pi vault and storage access, extending the broader Pi tooling effort into a native browsing experience.",
-    stack: ["Swift", "Apple Platforms", "Storage", "Utility"],
-    outcome: "Highlights cross-platform curiosity and a willingness to build native experiences outside Android.",
-    href: "https://github.com/ZenDeveloper7/PiVaultBrowser"
-  },
-  {
-    title: "droidlane",
-    label: "Android developer tool",
-    summary:
-      "A terminal-style Android project dashboard with a file editor, Gradle console, and git branch switcher aimed at streamlining project workflows.",
-    stack: ["Android", "Kotlin", "Developer Tools", "Git"],
-    outcome: "Built around developer experience and rapid project navigation inside Android workflows.",
-    href: "https://github.com/ZenDeveloper7/droidlane"
+      "A Linux CLI for detecting, validating, mounting, and browsing gocryptfs backup vaults with a workflow designed for practical local backup operations.",
+    stack: ["Go", "Linux", "CLI", "gocryptfs"],
+    outcome: "Built around durable command-line workflows and explicit vault handling instead of opaque backup tooling.",
+    href: "https://github.com/ZenDeveloper7/vaultcli"
   },
   {
     title: "valorant-mcp",
@@ -79,13 +70,13 @@ export const projects = [
     href: "https://github.com/ZenDeveloper7/openclaw-bridge"
   },
   {
-    title: "Covid-19-News",
-    label: "Android project",
+    title: "PiVaultBrowser",
+    label: "Apple platform utility",
     summary:
-      "An older Android project centered on COVID-19 news, reflecting earlier mobile work in information-focused app experiences.",
-    stack: ["Android", "Kotlin", "APIs", "Mobile UI"],
-    outcome: "Included as an earlier public Android build that still fits the mobile engineering arc.",
-    href: "https://github.com/ZenDeveloper7/Covid-19-News"
+      "An Apple platform browser for Pi vault and storage access, extending the broader Pi tooling effort into a native browsing experience.",
+    stack: ["Swift", "Apple Platforms", "Storage", "Utility"],
+    outcome: "Highlights cross-platform curiosity and a willingness to build native experiences outside Android.",
+    href: "https://github.com/ZenDeveloper7/PiVaultBrowser"
   }
 ];
 
@@ -108,56 +99,35 @@ export const experience = [
     role: "Senior Android Developer",
     company: "Fluid Touch Pte Ltd • Hyderabad • On-site",
     summary:
-      "Worked as a senior Android developer in an on-site Hyderabad role, contributing modern Android expertise in a short engagement."
+      "Contributed senior-level Android development in a short on-site engagement, bringing modern Kotlin and product delivery experience into the team."
   },
   {
     period: "Jul 2024 — Oct 2025",
     role: "Senior Android Developer",
     company: "Zaggle • Hyderabad • On-site",
     summary:
-      "Modernized the Android app through MVVM migration, Jetpack Compose UI overhaul, and adoption of current Android best practices across the codebase."
+      "Helped modernize the Android app through MVVM migration, a Jetpack Compose UI overhaul, and adoption of current Android best practices across the codebase."
   },
   {
     period: "Jun 2021 — Jul 2024",
     role: "Mobile Application Developer",
     company: "AppX • Remote",
     summary:
-      "Built and maintained white-labeled Android and Flutter apps with a focus on scalability, performance, modular architecture, and Gradle flavor-based product delivery."
+      "Built and maintained white-labeled Android and Flutter apps with a focus on scalability, performance, modular architecture, and Gradle flavor-driven product delivery."
   },
   {
     period: "Jun 2020 — May 2021",
     role: "Android Developer",
     company: "Sameer FSN • Remote / Work from home",
     summary:
-      "Developed and maintained EdTech Android applications, supporting feature work and day-to-day product improvements."
-  },
-  {
-    period: "Aug 2020 — Sep 2020",
-    role: "Android Developer Intern",
-    company: "Synergie",
-    summary:
-      "Contributed UI and core functionality for a social app built around pet-focused interactions."
-  },
-  {
-    period: "Mar 2020",
-    role: "Full Stack Developer Intern",
-    company: "Bikayi",
-    summary:
-      "Worked across Android and Angular development, contributing on both mobile and web surfaces during the internship."
-  },
-  {
-    period: "Nov 2019 — Dec 2019",
-    role: "Android Developer Intern",
-    company: "Latracal Solutions",
-    summary:
-      "Improved an existing feature, explored Python IDE embedding with the Chaquopy SDK, and worked on in-app purchase related functionality."
+      "Developed and maintained EdTech Android applications, supporting feature work, product improvements, and day-to-day app reliability."
   },
   {
     period: "2017 — 2021",
     role: "BTech, Computer Science and Engineering",
     company: "St. Peter's Engineering College",
     summary:
-      "Undergraduate education in computer science during the years that led into early Android internships and product roles."
+      "Computer science foundation built alongside early Android internships and the first round of product work."
   }
 ];
 
